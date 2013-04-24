@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Kiosk Number Pad</title>
+    <link href="bootstrap.css" rel="stylesheet"/>
+	<link href="site.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container"> 
+		<div class="row" style="margin-top:25px">
+			<div class="span2">&nbsp;</div>
+			<div class="span8" style="text-align: center">
+				<h2>Please enter your number</h2>
+			</div>
+			<div class="span2">&nbsp;</div>
+		</div>
+		<form action="Next.html" method="get">    
+			<div class="row">
+				<div class="span4">&nbsp;</div>
+				<div class="span4" style="text-align: center">
+					<div class="editor-field">
+						<input class="input-kiosk" id="NumberId" name="NumberId" type="text" value="" />
+					</div>
+				</div>
+				<div class="span4">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="span3">&nbsp;</div>
+				<div class="span6" style="text-align: center;">
+					<div class="row">
+						<div class="span2"><input id="numpad1" class="btn btn-numpad btn-primary" type="button" value="1" /></div>
+						<div class="span2"><input id="numpad2" class="btn btn-numpad btn-primary" type="button" value="2" /></div>
+						<div class="span2"><input id="numpad3" class="btn btn-numpad btn-primary" type="button" value="3" /></div>
+					</div>
+					<div class="row"><div class="span6">&nbsp;</div></div>
+					<div class="row">
+						<div class="span2"><input id="numpad4" class="btn btn-numpad btn-primary" type="button" value="4" /></div>
+						<div class="span2"><input id="numpad5" class="btn btn-numpad btn-primary" type="button" value="5" /></div>
+						<div class="span2"><input id="numpad6" class="btn btn-numpad btn-primary" type="button" value="6" /></div>
+					</div>
+					<div class="row"><div class="span6">&nbsp;</div></div>
+					<div class="row">
+						<div class="span2"><input id="numpad7" class="btn btn-numpad btn-primary" type="button" value="7" /></div>
+						<div class="span2"><input id="numpad8" class="btn btn-numpad btn-primary" type="button" value="8" /></div>
+						<div class="span2"><input id="numpad9" class="btn btn-numpad btn-primary" type="button" value="9" /></div>
+					</div>
+					<div class="row"><div class="span6">&nbsp;</div></div>
+					<div class="row">
+						<div class="span2">&nbsp;</div>
+						<div class="span2"><input id="numpad0" class="btn btn-numpad btn-primary" type="button" value="0" /></div>
+						<div class="span2">&nbsp;</div>
+					</div>
+				</div>
+				<div class="span3">&nbsp;</div>
+			</div>
+			<div class="row"><div class="span12">&nbsp;</div></div>
+			<div class="row"><div class="span12">&nbsp;</div></div>
+			<div class="row">
+				<div class="span3">&nbsp;</div>
+				<div class="span2"><a class="btn btn-kiosk-nav btn-primary" href="http://www.google.com">Back</a></div>
+				<div class="span2">&nbsp;</div>
+				<div class="span2" style="text-align: right"><input class="btn btn-kiosk-nav btn-primary" type="submit" value="Next" /></div>
+				<div class="span3">&nbsp;</div>
+			</div>
+		</form>
+    </div>
+	<script src="jquery-1.7.1.js"></script>
+    <script src="numpad.js"></script>
+    <script type="text/javascript">
+        registerNumpad("NumberId");
+    </script>
+</body>
+</html>
